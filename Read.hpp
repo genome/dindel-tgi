@@ -381,7 +381,7 @@ public:
 	{
 		FetchReadData *ptr=(FetchReadData *) data;
 
-		if (!( (b->core.flag & BAM_FDUP) || (b->core.flag & BAM_FQCFAIL) )) {
+		if (!( (b->core.flag & BAM_FDUP) || (b->core.flag & BAM_FQCFAIL) || (b->core.flag & 0x800) )) {
 			try {
 				ptr->reads->push_back(Read(b, *(ptr->libraries), ptr->poolID, (*(ptr->myBams))[ptr->poolID]->bh));
 				ptr->numReads++;
