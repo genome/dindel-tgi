@@ -1,4 +1,4 @@
-SAMTOOLDIR=/nfs/users/nfs_c/caa/source/samtools/
+SAMTOOLDIR=samtools/
 SEQANDIR=seqan_library/
 
 CPPFLAGS= -DNDEBUG -D_IOLIB=2 -DMINREADS=2 -DDINDEL
