@@ -3,7 +3,7 @@ SEQANDIR=seqan_library/
 
 CPPFLAGS= -DNDEBUG -D_IOLIB=2 -DMINREADS=2 -DDINDEL
 CXXFLAGS= -I$(SAMTOOLDIR) -I$(SEQANDIR) -I./  -Wno-deprecated  -O3 
-LDFLAGS= -L$(SAMTOOLDIR)  -lbam -lz -lboost_program_options -static 
+LDFLAGS= -L$(SAMTOOLDIR)  -lbam -lz -lboost_program_options -static -lpthread
 
 SRCSDINDEL=DInDel.cpp HapBlock.cpp HaplotypeDistribution.cpp ObservationModelFB.cpp GetCandidates.cpp Faster.cpp
 OBJSDINDEL=$(SRCSDINDEL:%.cpp=%.o)  
