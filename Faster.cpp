@@ -35,7 +35,7 @@
 #include "Haplotype.hpp"
 #include "Faster.hpp"
 #include "Utils.hpp"
-#include "foreach.hpp"
+#include <boost/foreach.hpp>
 using namespace std;
 const int DEBUGS=0;
 

@@ -22,7 +22,7 @@
 #include <fstream>
 #include <string>
 #include "MyBam.hpp"
-#include "foreach.hpp"
+#include <boost/foreach.hpp>
 #include "ObservationModelSeqAn.hpp"
 #include "GetCandidates.hpp"
 #include "Variant.hpp"
@@ -32,7 +32,6 @@
 #include "Fasta.hpp"
 #include "StringHash.hpp"
 #include <set>
-#include "foreach.hpp"
 using namespace std;
 
 int GetCandidatesFromCIGAR::getIndelFromCIGARFetchFunc(const bam1_t *b, void *data)

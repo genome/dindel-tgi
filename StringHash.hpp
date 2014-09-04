@@ -25,7 +25,7 @@
 #include <ext/hash_map>
 #include <string>
 #include <iostream>
-#include "foreach.hpp"
+#include <boost/foreach.hpp>
 using namespace std;
 using namespace boost;
 using __gnu_cxx::hash;

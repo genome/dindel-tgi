@@ -24,7 +24,7 @@
 #include <boost/math/special_functions/digamma.hpp>
 #include <seqan/align.h>
 #include <seqan/graph_align.h>
-#include "foreach.hpp"
+#include <boost/foreach.hpp>
 #include "bam.h"
 #include "DInDel.hpp"
 #include "Haplotype.hpp"
