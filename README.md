@@ -1,10 +1,10 @@
 # wugc-dindel
 
-This is a fork of [Dindel](https://www.sanger.ac.uk/resources/software/dindel/)
-1.01 by [The Genome Institute at Washington University](http://genome.wustl.edu).
+This is a fork of [dindel-1.01](https://www.sanger.ac.uk/resources/software/dindel/)
+by [The Genome Institute at Washington University](http://genome.wustl.edu).
 It is licensed under the [GNU GPLv3](http://www.gnu.org/copyleft/gpl.html).
 
-The [original program](https://www.sanger.ac.uk/resources/software/dindel/) was
+[Dindel](https://www.sanger.ac.uk/resources/software/dindel/) was originally
 developed by Cornelis Albers together with Gerton Lunter ([Wellcome Trust Centre for Human Genetics, University of Oxford](http://www.well.ox.ac.uk/home))
 and Richard Durbin ([Wellcome Trust Sanger Institute](https://www.sanger.ac.uk)).  
 
