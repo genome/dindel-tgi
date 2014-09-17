@@ -1,4 +1,4 @@
-# wugc-dindel
+# dindel-tgi
 
 This is a fork of [dindel-1.01](https://www.sanger.ac.uk/resources/software/dindel/)
 by [The Genome Institute at Washington University](http://genome.wustl.edu).
