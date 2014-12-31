@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 import os, sys, glob, gzip, math
 from optparse import OptionParser
-utilPath = 'utils/' # specify absolute path of directory with the Dindel python utils/ subdirectory
-if not os.path.exists(utilPath):
-    sys.stderr.write("Please specify correct path for the Dindel 'utils/' subdirectory by editing third line of this script.\n")
-    sys.exit(1)
-sys.path.append(utilPath)
+# Make sure to set the proper PYTHONPATH before running this script:
 import FileUtils
 import Fasta, AnalyzeSequence, Variant
 import VCFFile
