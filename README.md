@@ -61,3 +61,16 @@ of these dependencies are included in this repo.
 
 If libboost is installed and the samtools submodule is in place, you
 should be able to compile the `dindel` binary using `make`.
+
+## Packaging
+
+Install dependencies, clone the repository, and run `dpkg-buildpackage`:
+
+```
+$ sudo apt-get update
+$ sudo apt-get install debhelper git-core libboost1.40-dev libboost-program-options-dev
+$ git clone https://github.com/genome/dindel-tgi.git dindel-tgi1.01-wu1-1.01-wu1
+$ cd dindel-tgi1.01-wu1-1.01-wu1
+$ git checkout 1.01-wu1-1
+$ dpkg-buildpackage
+```
