@@ -36,7 +36,7 @@ def convert(inputVCFFile = '', outputVariantFile = '', parameters = {}):
             if rseq != ref:
                 sys.stderr.write("REFSEQ inconsistency\n")
 
-            if float(dat['QUAL'])>=parameters['minQual']:
+            if dat['QUAL']==  '.' or float(dat['QUAL'])>=parameters['minQual']:
                 altseq = dat['ALT'].split(',')
 
                 for alt in altseq:
