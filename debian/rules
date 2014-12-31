@@ -1,7 +1,16 @@
 #!/usr/bin/make -f
 
-%:
-	SUFFIX=-tgi1.01-wu1 dh $@
+LIBBAM=samtools/libbam.a
+DINDEL_VERSION=1.01-wu1
+
+%: $(LIBBAM)
+	SUFFIX=-tgi$(DINDEL_VERSION) dh $@
+
+# Building samtools from the dindel Makefile has proven problematic
+$(LIBBAM):
+	rm -rf samtools
+	git submodule update --init samtools
+	$(MAKE) -C samtools
 
 override_dh_auto_install:
-	$(MAKE) DESTDIR=$$(pwd)/debian/dindel-tgi1.01-wu1 prefix=/usr install
+	$(MAKE) DESTDIR=$$(pwd)/debian/dindel-tgi$(DINDEL_VERSION) prefix=/usr install

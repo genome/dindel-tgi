@@ -20,6 +20,10 @@ $(DINDEL):$(OBJSDINDEL) Read.hpp DInDel.hpp HapBlock.hpp Haplotype.hpp Haplotype
 clean:
 	rm -f $(OBJSDINDEL) $(DINDEL)
 
+DESTBINDIR=$(DESTDIR)$(BINDIR)
+DESTSHAREDIR=$(DESTDIR)$(SHAREDIR)/$(DINDEL)
+
 install: all
-	install $(DINDEL) $(DESTDIR)$(BINDIR)
-	cp -dr --no-preserve=ownership python/* $(DESTDIR)$(SHAREDIR)/$(DINDEL)/
+	install -d $(DESTBINDIR) $(DESTSHAREDIR)
+	install $(DINDEL) $(DESTBINDIR)
+	cp -dr --no-preserve=ownership python/* $(DESTSHAREDIR)/
