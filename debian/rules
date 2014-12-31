@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	SUFFIX=-tgi1.01 dh $@
+	SUFFIX=-tgi1.01-wu1 dh $@
 
 override_dh_auto_install:
-	$(MAKE) DESTDIR=$$(pwd)/debian/dindel-tgi1.01 prefix=/usr install
+	$(MAKE) DESTDIR=$$(pwd)/debian/dindel-tgi1.01-wu1 prefix=/usr install

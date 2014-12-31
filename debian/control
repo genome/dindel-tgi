@@ -1,4 +1,4 @@
-Source: dindel-tgi1.01
+Source: dindel-tgi1.01-wu1
 Section: science
 Priority: optional
 Maintainer: Genome Developers <genome-dev@genome.wustl.edu>
@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 7), libboost1.40-dev, libboost-program-options-dev
 Standards-Version: 3.9.2
 Homepage: https://github.com/genome/dindel-tgi
 
-Package: dindel-tgi1.01
+Package: dindel-tgi1.01-wu1
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, ${python:Depends}
 Description: Dindel
