@@ -12,6 +12,8 @@ Homepage: https://github.com/genome/dindel-tgi
 Package: dindel-tgi1.01-wu1
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, ${python:Depends}
+Replaces: dindel-tgi1.01
+Breaks: dindel-tgi1.01
 Description: Dindel
  Dindel TGI is a fork of Dindel, a program for calling small indels from
  short-read sequence data ('next generation sequence data'). It is currently
