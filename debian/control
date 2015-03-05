@@ -5,7 +5,7 @@ Maintainer: Genome Developers <genome-dev@genome.wustl.edu>
 DM-Upload-Allowed: yes
 Uploaders: Genome Developers <genome-dev@genome.wustl.edu>
 Build-Depends: debhelper (>= 7), git-core, libboost-dev,
- libboost-program-options-dev
+ libboost-program-options-dev libncurses5-dev
 Standards-Version: 3.9.2
 Homepage: https://github.com/genome/dindel-tgi
 
