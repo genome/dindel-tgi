@@ -1,3 +1,9 @@
+dindel-tgi1.01-wu1 (1.01-wu1-3) UNRELEASED; urgency=low
+
+  * Attempt to fix install on ubuntu precise
+
+ -- Avi Ramu <aramu@genome.wustl.edu>  Thu, 05 Mar 2015 14:49:59 -0600
+
 dindel-tgi1.01-wu1 (1.01-wu1-2) UNRELEASED; urgency=low
 
   * Attempt to break dindel-tgi1.01
