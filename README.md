@@ -68,9 +68,9 @@ Install dependencies, clone the repository, and run `dpkg-buildpackage`:
 
 ```
 $ sudo apt-get update
-$ sudo apt-get install debhelper git-core libboost1.40-dev libboost-program-options-dev
+$ sudo apt-get install debhelper git-core libboost-dev libboost-program-options-dev libncurses5-dev
 $ git clone https://github.com/genome/dindel-tgi.git dindel-tgi1.01-wu1-1.01-wu1
 $ cd dindel-tgi1.01-wu1-1.01-wu1
-$ git checkout 1.01-wu1-1
+$ git checkout 1.01-wu1-3
 $ dpkg-buildpackage
 ```
